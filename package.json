@@ -1,0 +1,20 @@
+{
+  "name": "screenshot-automation",
+  "version": "1.0.0",
+  "description": "Playwright script to take screenshots with login",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "screenshot": "npx ts-node screenshot.ts",
+    "test-screenshot": "npx ts-node test-screenshot.ts",
+    "install-browsers": "npx playwright install",
+    "test:screenshots": "playwright test --project=chromium",
+    "test:screenshots:parallel": "playwright test --project=chromium --workers=2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0"
+  }
+} 
